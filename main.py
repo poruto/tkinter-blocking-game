@@ -41,7 +41,7 @@ class Player:
 
 class Bot(Player):
     def __init__(self, game, name="Bot", tactic=None):
-        super(self, game)
+        super(game)
         self.name = name + str(len(self.game.players))
         if tactic == None:
             self.tactic = DEFAULT_BOT_TACTIC
